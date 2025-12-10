@@ -10,6 +10,12 @@ jobs:
   test:
     runs-on: ubuntu-latest
     
+    env:
+      SECRET_KEY: test-secret-key-for-ci-cd-pipeline-testing-only
+      DATABASE_URL: sqlite:///./test.db
+      ACCESS_TOKEN_EXPIRE_MINUTES: 30
+      ALGORITHM: HS256
+    
     steps:
     - uses: actions/checkout@v3
     
