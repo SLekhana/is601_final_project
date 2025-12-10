@@ -10,8 +10,8 @@
 
 **Project Title**: Calculator API with JWT Authentication and History Tracking
 
-**GitHub Repository**: https://github.com/YOUR_USERNAME/is601_final_project  
-**Docker Hub Image**: YOUR_DOCKERHUB_USERNAME/is601-calculator-app
+**GitHub Repository**: https://github.com/SLekhana/is601_final_project  
+**Docker Hub Image**: lekhanasandra/is601-calculator-app
 
 **Description**: A full-stack calculator application with RESTful API, user authentication, calculation history tracking, and automated CI/CD deployment.
 
