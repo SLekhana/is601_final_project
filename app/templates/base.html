@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Calculator App{% endblock %}</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <h1>Calculator App</h1>
+            <div id="nav-links">
+                <a href="/">Home</a>
+                <a href="/history">History</a>
+                <a href="/statistics">Statistics</a>
+                <button id="logout-btn" style="display: none;">Logout</button>
+            </div>
+        </div>
+    </nav>
+    
+    <main class="container">
+        {% block content %}{% endblock %}
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Calculator App. All rights reserved.</p>
+    </footer>
+    
+    <script src="/static/js/main.js"></script>
+    {% block scripts %}{% endblock %}
+</body>
+</html>

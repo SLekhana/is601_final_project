@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="auth-section" id="auth-section">
+    <div class="card">
+        <h2 id="auth-title">Login</h2>
+        <form id="auth-form">
+            <div class="form-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" style="display: none;">
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary" id="auth-submit-btn">Login</button>
+            <p class="toggle-auth">
+                <span id="toggle-text">Don't have an account?</span>
+                <a href="#" id="toggle-auth-link">Register</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+<div class="calculator-section" id="calculator-section" style="display: none;">
+    <div class="card">
+        <h2>Calculator</h2>
+        <form id="calc-form">
+            <div class="form-group">
+                <label for="operation">Operation</label>
+                <select id="operation" name="operation" required>
+                    <option value="add">Addition (+)</option>
+                    <option value="subtract">Subtraction (-)</option>
+                    <option value="multiply">Multiplication (×)</option>
+                    <option value="divide">Division (÷)</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="operand1">First Number</label>
+                <input type="number" step="any" id="operand1" name="operand1" required>
+            </div>
+            <div class="form-group">
+                <label for="operand2">Second Number</label>
+                <input type="number" step="any" id="operand2" name="operand2" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Calculate</button>
+        </form>
+        <div id="result" class="result" style="display: none;">
+            <h3>Result: <span id="result-value"></span></h3>
+        </div>
+    </div>
+    
+    <div class="card">
+        <h2>Recent Calculations</h2>
+        <div id="recent-calculations">
+            <p>No calculations yet.</p>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script src="/static/js/calculator.js"></script>
+{% endblock %}
