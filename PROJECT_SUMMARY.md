@@ -1,6 +1,6 @@
 # IS601 Final Project Summary
-**Student Name**: Your Name  
-**NJIT ID**: Your ID  
+**Student Name**: Lekhana Sandra 
+**NJIT ID**: ls575
 **Course**: IS601 - Python for Web API Development  
 **Date**: December 10, 2025
 
